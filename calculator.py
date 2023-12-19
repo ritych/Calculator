@@ -6,12 +6,9 @@ def calculate(a, b, operation):
     elif operation == "*":
         return str(a * b)
     elif operation == "/":
-        if b == 0:
-            raise ValueError("Деление на ноль запрещено")
         return str(a // b)
     else:
         raise ValueError("Неподдерживаемая операция")
-
 
 def main(input_str):
     try:
